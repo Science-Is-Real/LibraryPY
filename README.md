@@ -1,2 +1,3 @@
 # LibraryPY
-Open-source library software using python
+Open-source library software using python. Requires TKinter.
+Run LibraryPY.py
