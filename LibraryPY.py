@@ -1,13 +1,18 @@
+import GUI.py
 from TKinter import *
 bookData = open('bookData', 'w+')
 userData = open('userData.txt', 'w+')
 
 def checkOut():
     checkedOutBooks = []
-    checkedOutBooksInput = input(
-
+    checkedOutBooksInput = input(' Type "done" when done./nBook number: ')
+    while checkedOutBooksInput != done:
+        checkedOutBooks.append(checkedOutBooksInput)
+        checkedOutBooksInput = input(' Type "done" when done./nBook number: ')
+    
+    
 def checkIn():
-
+    
 
 def addBook():
     bookName = input('Book name: ')
@@ -18,6 +23,6 @@ def addBook():
     bookData.write(bookNumber + '=[' + bookName + ',' + bookAuthor + ',' + bookdate + ',' + bookISBN + ']') 
     
 def addUser():
-    userName = input('Name: ')
+    userName1 = input('Name: ')
     userNumber = input('Number: ')
-    userData.write(userNumber + '=[' userName + ',none]')
+    userData.write(userNumber + '=[' + str(userName1) + ',none]')
