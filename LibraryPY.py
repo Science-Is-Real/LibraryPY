@@ -19,19 +19,19 @@ def command():
 def checkOut():
     checkedOutBooks = []
     user = input('User number: ')
-    checkedOutBooksInput = input('Type "done" when done./nBook number: ')
+    checkedOutBooksInput = input('Type "done" when done.\nBook number: ')
     while checkedOutBooksInput != 'done':
         checkedOutBooks.append(checkedOutBooksInput)
-        checkedOutBooksInput = input('Type "done" when done./nBook number: ')
+        checkedOutBooksInput = input('Type "done" when done.\nBook number: ')
     
     
 def checkIn():
     checkedInBooks = []
     user = input('User number: ')
-    checkedInBooksInput = input('Type "done" when done./nBook number: ')
+    checkedInBooksInput = input('Type "done" when done.\nBook number: ')
     while checkedInBooksInput != 'done':
         checkedInBooks.append(checkedInBooksInput)
-        checkedInBooksInput = input('Type "done" when done./nBook number: ')
+        checkedInBooksInput = input('Type "done" when done.\nBook number: ')
 
 def addBook():
     bookName = input('Book name: ')
@@ -39,7 +39,7 @@ def addBook():
     bookDate = input('Publishing date: ')
     bookISBN = input('ISBN: ')
     bookNumber = input('Book number: ')
-    bookData.write(bookNumber + '=[' + bookName + ',' + bookAuthor + ',' + bookdate + ',' + bookISBN + 'no]') 
+    bookData.write(bookNumber + '=[' + bookName + ',' + bookAuthor + ',' + bookDate + ',' + bookISBN + 'no]') 
     
 def addUser():
     userName1 = input('Name: ')
