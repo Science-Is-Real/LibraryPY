@@ -1,5 +1,4 @@
 from GUI import *
-from Tkinter import *
 import os
 from os.path import join
 import datetime
@@ -7,11 +6,15 @@ bookData = open('bookData', 'w+')
 userData = open('userData.txt', 'w+')
 
 def command():
-    button('Check out', checkOut())
-    button('Check in', checkIn())
-    button('Add a book', addBook())
-    labels
-    button('Add a user', addUser())
+    button('Check out', checkOut)
+    labels('Check out a book')
+    button('Check in', checkIn)
+    labels('Check in a book')
+    button('Add a book', addBook)
+    labels('Add a book')
+    button('Add a user', addUser)
+    labels('Add a user')
+    root.mainloop()
 
 def checkOut():
     checkedOutBooks = []
@@ -42,3 +45,7 @@ def addUser():
     userName1 = input('Name: ')
     userNumber = input('Number: ')
     userData.write(userNumber + '=[' + str(userName1) + ',none]')
+
+Talk('Running LibraryPY V0.2', 1)
+e.focus_set()
+command()
