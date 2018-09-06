@@ -1,3 +1,10 @@
+'''
+
+LibrayPY V0.2.1
+By: Science-Is-Real
+GitHub link: https://github.com/Science-Is-Real/LibraryPY
+
+'''
 from GUI import *
 import os
 from os.path import join
@@ -46,6 +53,6 @@ def addUser():
     userNumber = input('Number: ')
     userData.write(userNumber + '=[' + str(userName1) + ',none]')
 
-Talk('Running LibraryPY V0.2', 1)
+Talk('Running LibraryPY V0.2.1', 1)
 e.focus_set()
 command()
