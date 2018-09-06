@@ -1,8 +1,8 @@
 import time
 from tkinter import *
 root = Tk()
-root.title('LibraryPY')
-root.geometry('1500x720+0+0')
+root.title('LibraryPY Alpha')
+root.geometry('500x250+0+0')
 curLabels = []
 curRow = 0
 lRow = 0
